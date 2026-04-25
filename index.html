@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah — PortfolioPedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      const stored = localStorage.getItem('theme');
+      const theme = stored === 'dark' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-left">
+      <a class="logo-link" href="#">
+        <img src="assets/logo.svg" alt="PortfolioPedia" class="logo-svg" />
+        <span class="site-title">PortfolioPedia</span>
+      </a>
+    </div>
+    <div class="topbar-center">
+      <form class="search-form" role="search">
+        <label for="search-input" class="visually-hidden">Search PortfolioPedia</label>
+        <input id="search-input" type="search" placeholder="Search PortfolioPedia" aria-label="Search PortfolioPedia" />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </div>
+    <div class="topbar-right">
+      <nav class="top-links" aria-label="Top navigation">
+        <a href="https://en.wikipedia.org/wiki/Talk:Abdullah" target="_blank" rel="noreferrer"></a>
+        <a href="https://en.wikipedia.org/wiki/Special:Contributions" target="_blank" rel="noreferrer">Contributions</a>
+        <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Abdullah" target="_blank" rel="noreferrer">Log in</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+      <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Open navigation menu" type="button">☰</button>
+    </div>
+  </div>
+
+  <div class="tabs-row">
+    <nav class="tabs" aria-label="Article navigation tabs">
+      <a class="tab active" href="https://en.wikipedia.org/wiki/Abdullah" target="_blank" rel="noreferrer">Article</a>
+      <a class="tab" href="https://en.wikipedia.org/wiki/Talk:Abdullah" target="_blank" rel="noreferrer">Talk</a>
+      <a class="tab" href="https://en.wikipedia.org/wiki/Abdullah?action=read" target="_blank" rel="noreferrer">Read</a>
+      <a class="tab" href="https://en.wikipedia.org/w/index.php?title=Abdullah&action=edit" target="_blank" rel="noreferrer">Edit</a>
+      <a class="tab" href="https://en.wikipedia.org/w/index.php?title=Abdullah&action=history" target="_blank" rel="noreferrer">View history</a>
+    </nav>
+    <div class="article-badge" title="This is a recognized portfolio article">⭐ Good article</div>
+  </div>
+
+  <div class="breadcrumb">PortfolioPedia › Software Engineers › Abdullah</div>
+
+  <!-- <div class="mobile-panel" id="mobile-panel">
+    <nav class="mobile-links" aria-label="Mobile navigation links">
+      <a href="https://en.wikipedia.org/wiki/Talk:Abdullah" target="_blank" rel="noreferrer">Talk</a>
+      <a href="https://en.wikipedia.org/wiki/Special:Contributions" target="_blank" rel="noreferrer">Contributions</a>
+      <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Abdullah" target="_blank" rel="noreferrer">Log in</a>
+    </nav>
+  </div> -->
+
+  <main class="main-layout">
+    <aside class="sidebar">
+      <div class="toc-card" id="toc-card">
+        <div class="toc-header">
+          <span>Contents</span>
+          <button class="toc-toggle" id="toc-toggle" type="button">hide</button>
+        </div>
+        <nav class="toc-body" id="toc-body" aria-label="Table of contents">
+          <ol class="toc-list">
+            <li><a href="#introduction">1 Introduction</a></li>
+            <li>
+              <a href="#skills">2 Skills</a>
+              <ol>
+                <li><a href="#languages">2.1 Languages</a></li>
+                <li><a href="#backend">2.2 Backend</a></li>
+                <li><a href="#cloud">2.3 Cloud</a></li>
+                <li><a href="#databases">2.4 Databases</a></li>
+                <li><a href="#tools">2.5 Tools</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#projects">3 Projects</a>
+              <ol>
+                <li><a href="#auto-mininet">3.1 Auto Mininet</a></li>
+                <li><a href="#aws-architecture">3.2 AWS 3-Tier Architecture</a></li>
+                <li><a href="#full-stack">3.3 Full Stack Web Application</a></li>
+              </ol>
+            </li>
+            <li><a href="#experience">4 Experience</a></li>
+            <li><a href="#education">5 Education</a></li>
+            <li><a href="#contact">6 Contact</a></li>
+            <li><a href="#references">7 References</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="tools-card">
+        <h2>Tools</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Abdullah" target="_blank" rel="noreferrer">What links here</a></li>
+          <li><a href="resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <article class="article-content">
+      <div class="hatnote note-top">Abdullah redirects here. For other uses, see <a href="https://en.wikipedia.org/wiki/Abdullah_(name)" target="_blank" rel="noreferrer">Abdullah (name)</a>.</div>
+      <h1>Abdullah <span class="protection" title="This page is semi-protected"></span></h1>
+      <p class="subtitle">Pakistani software engineer, backend architect</p>
+      <div class="article-meta">Estimated reading time: 4 minutes · ~620 words</div>
+      <div class="article-entry">
+        <aside class="infobox">
+          <div class="infobox-title">Abdullah</div>
+          <div class="infobox-subtitle">Software Engineer</div>
+          <figure class="infobox-image">
+            <div class="avatar-frame">
+              <img src="assets/p.png" alt="Abdullah" class="avatar-photo" />
+              <div class="avatar-message">Go dark mode, he's probably asleep!</div>
+            </div>
+            <figcaption>Photo</figcaption>
+          </figure>
+          <table>
+            <tr><th>Born</th><td>Pakistan</td></tr>
+            <tr><th>Alma mater</th><td>NUCES-FAST</td></tr>
+            <tr><th>Occupation</th><td>Software Engineer</td></tr>
+            <tr><th>Years active</th><td>2023–present</td></tr>
+            <tr><th>Known for</th><td>Auto Mininet, AWS Architecture, Backend Systems</td></tr>
+            <tr><th>Email</th><td><a href="mailto:abdullah.compscientist@gmail.com">abdullah.compscientist@gmail.com</a></td></tr>
+            <tr><th>GitHub</th><td><a href="https://github.com/AbdullahHAK" target="_blank" rel="noreferrer">github.com/AbdullahHAK</a></td></tr>
+            <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/abdullah-nov2004/" target="_blank" rel="noreferrer">linkedin.com/in/abdullah-nov2004</a></td></tr>
+          </table>
+        </aside>
+
+        <div class="dyk-card">
+          <div class="dyk-label">Did you know?</div>
+          <p>...that Abdullah built Auto Mininet, an AI system that generates network topologies from natural language?</p>
+        </div>
+
+        <div class="lead-paragraphs">
+          <p><strong>Abdullah</strong> is a Pakistani software engineer specializing in backend engineering, cloud infrastructure, and scalable systems. He is currently completing his Bachelor of Science in Computer Science at <a href="https://www.nu.edu.pk" target="_blank" rel="noreferrer">FAST National University of Computer and Emerging Sciences</a> (NUCES), Pakistan.<sup><a href="#ref-1" id="cite-1">[1]</a></sup> He is known for developing Auto Mininet, an AI-powered network topology generation platform.<sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
+          <p>Abdullah has hands-on experience building <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noreferrer">REST APIs</a>, deploying <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services" target="_blank" rel="noreferrer">AWS</a> infrastructure, training <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noreferrer">machine learning</a> models, and delivering freelance software projects end-to-end.<sup><a href="#ref-3" id="cite-3">[3]</a></sup></p>
+        </div>
+      </div>
+
+      <section id="introduction">
+        <h2>Introduction <a class="edit-link" href="#" data-section="Introduction">[edit]</a></h2>
+        <p>The page summarizes Abdullah’s technical experience, project portfolio, and training path in a style that mirrors a Wikipedia biography article.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills <a class="edit-link" href="#" data-section="Skills">[edit]</a></h2>
+        <section id="languages">
+          <h3>Languages</h3>
+          <div class="skill-table">
+            <div class="skill-row"><span>Python</span><span class="skill-bar"><span class="fill fill-100"></span></span><strong>Expert</strong></div>
+            <div class="skill-row"><span>JavaScript</span><span class="skill-bar"><span class="fill fill-80"></span></span><strong>Advanced</strong></div>
+            <div class="skill-row"><span>C++</span><span class="skill-bar"><span class="fill fill-65"></span></span><strong>Intermediate</strong></div>
+            <div class="skill-row"><span>SQL</span><span class="skill-bar"><span class="fill fill-55"></span></span><strong>Intermediate</strong></div>
+            <div class="skill-row"><span>Bash</span><span class="skill-bar"><span class="fill fill-50"></span></span><strong>Intermediate</strong></div>
+          </div>
+        </section>
+
+        <section id="backend">
+          <h3>Backend</h3>
+          <p>Abdullah has built production-grade backend systems with Node.js and Express.js, specializing in REST APIs, authentication, and database design.</p>
+          <p class="tag-list">Node.js · Express.js · REST APIs · Authentication · Database Design</p>
+        </section>
+
+        <section id="cloud">
+          <h3>Cloud (AWS)</h3>
+          <div class="table-wrapper">
+            <table class="wikitable">
+              <thead>
+                <tr><th>Service</th><th>Purpose</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>EC2</td><td>Virtual compute instances</td></tr>
+                <tr><td>RDS</td><td>Managed relational database</td></tr>
+                <tr><td>S3</td><td>Object/static file storage</td></tr>
+                <tr><td>VPC</td><td>Network isolation &amp; security</td></tr>
+                <tr><td>Load Balancer</td><td>Traffic distribution</td></tr>
+                <tr><td>EFS</td><td>Shared elastic file system</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="databases">
+          <h3>Databases</h3>
+          <p class="inline-tags">MySQL · MongoDB · PostgreSQL</p>
+        </section>
+
+        <section id="tools">
+          <h3>Tools</h3>
+          <p class="inline-tags">Git · Linux · Docker · CI/CD pipelines</p>
+        </section>
+      </section>
+
+      <section id="projects">
+        <h2>Projects <a class="edit-link" href="#" data-section="Projects">[edit]</a></h2>
+
+        <article class="project-entry" id="auto-mininet">
+          <h3>Auto Mininet</h3>
+          <aside class="mini-infobox">
+            <div class="mini-title">Auto Mininet</div>
+            <div><strong>Developer:</strong> Abdullah</div>
+            <div><strong>Written in:</strong> Python, TypeScript</div>
+            <div><strong>Platform:</strong> HuggingFace Spaces</div>
+            <div><strong>Type:</strong> AI · Networking · LLM</div>
+          </aside>
+          <p>Auto Mininet is an AI-powered network topology generation platform developed by Abdullah between 2025 and 2026.<sup><a href="#ref-4" id="cite-4">[4]</a></sup> The system accepts natural language prompts and converts them into runnable Mininet Python scripts using a fine-tuned large language model (LLM).</p>
+          <p>The platform includes a full-stack implementation featuring user authentication, chat history, an administrative panel, and a code output interface. The underlying model was trained on a custom dataset of Mininet topologies.<sup><a href="#ref-5" id="cite-5">[5]</a></sup></p>
+        </article>
+
+        <article class="project-entry" id="aws-architecture">
+          <h3>AWS 3-Tier Architecture</h3>
+          <aside class="mini-infobox">
+            <div class="mini-title">AWS 3-Tier Architecture</div>
+            <div><strong>Developer:</strong> Abdullah</div>
+            <div><strong>Written in:</strong> Terraform, Python</div>
+            <div><strong>Platform:</strong> AWS</div>
+            <div><strong>Type:</strong> Cloud · Infrastructure · Scalability</div>
+          </aside>
+          <p>This architecture demonstrates a secure three-tier deployment using VPC segmentation, load balancing, and managed services to support reliable backend workloads.</p>
+        </article>
+
+        <article class="project-entry" id="full-stack">
+          <h3>Full Stack Web Application</h3>
+          <aside class="mini-infobox">
+            <div class="mini-title">Full Stack Web Application</div>
+            <div><strong>Developer:</strong> Abdullah</div>
+            <div><strong>Written in:</strong> React, Node.js</div>
+            <div><strong>Platform:</strong> Docker, AWS</div>
+            <div><strong>Type:</strong> Web · API · User Experience</div>
+          </aside>
+          <p>Abdullah built a responsive web application with a polished frontend, secure backend APIs, and automated deployment pipelines for production readiness.</p>
+        </article>
+      </section>
+
+      <section id="experience">
+        <h2>Experience <a class="edit-link" href="#" data-section="Experience">[edit]</a></h2>
+        <div class="table-wrapper">
+          <table class="wikitable">
+            <thead>
+              <tr><th>Period</th><th>Role</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2023–2025</td><td>Freelance Developer</td><td>Built web apps, backend systems, automation bots. Managed deployment, maintenance, and client delivery independently.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education <a class="edit-link" href="#" data-section="Education">[edit]</a></h2>
+        <div class="table-wrapper">
+          <table class="wikitable">
+            <thead>
+              <tr><th>Degree</th><th>Institution</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>BS Computer Science</td><td>NUCES-FAST, Pakistan</td><td>Final Semester (2026)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact <a class="edit-link" href="#" data-section="Contact">[edit]</a></h2>
+        <div class="hatnote note-contact">ℹ️ This section lists contact information for professional purposes only.</div>
+        <p>For professional inquiries, Abdullah can be reached via:</p>
+        <ul>
+          <li>Email: <a href="mailto:abdullah.compscientist@gmail.com">abdullah.compscientist@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/AbdullahHAK" target="_blank" rel="noreferrer">github.com/AbdullahHAK</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/abdullah-nov2004/" target="_blank" rel="noreferrer">linkedin.com/in/abdullah-nov2004</a></li>
+        </ul>
+      </section>
+
+      <section class="stub-box">
+        <p><strong>Stub.</strong> This article is a stub. You can help expand it by adding more details.</p>
+      </section>
+
+      <section id="references">
+        <h2>References <a class="edit-link" href="#" data-section="References">[edit]</a></h2>
+        <ol class="references-list">
+          <li id="ref-1">^ "FAST National University, Peshawar Campus". nuces.edu.pk. <a href="#cite-1">^</a></li>
+          <li id="ref-2">^ Abdullah (2026). "Auto Mininet: LLM-based Topology Generator". HuggingFace Spaces. <a href="#cite-2">^</a></li>
+          <li id="ref-3">^ Abdullah's GitHub Profile. github.com. <a href="#cite-3">^</a></li>
+          <li id="ref-4">^ "Auto Mininet Project Documentation". 2025. <a href="#cite-4">^</a></li>
+          <li id="ref-5">^ Custom Mininet training dataset. HuggingFace. 2025. <a href="#cite-5">^</a></li>
+        </ol>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-categories">
+      <span>Categories:</span>
+      <a href="https://en.wikipedia.org/wiki/Category:Pakistani_software_engineers" target="_blank" rel="noreferrer">Pakistani software engineers</a>
+      <a href="https://en.wikipedia.org/wiki/Category:Cloud_computing" target="_blank" rel="noreferrer">Cloud computing</a>
+      <a href="https://en.wikipedia.org/wiki/Category:Machine_learning" target="_blank" rel="noreferrer">Machine learning</a>
+      <a href="https://en.wikipedia.org/wiki/Category:Backend_engineering" target="_blank" rel="noreferrer">Backend engineering</a>
+      <a href="https://en.wikipedia.org/wiki/Category:NUCES_alumni" target="_blank" rel="noreferrer">NUCES alumni</a>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-meta">
+      <p>This page was last edited on <span id="last-edited"></span>.</p>
+      <p>Text is available under a fictional open license.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:Privacy_policy" target="_blank" rel="noreferrer">Privacy policy</a>
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank" rel="noreferrer">About</a>
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" target="_blank" rel="noreferrer">Disclaimers</a>
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" target="_blank" rel="noreferrer">Contact</a>
+      <a href="#" id="theme-link">Dark mode</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
